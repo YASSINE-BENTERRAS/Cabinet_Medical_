@@ -37,6 +37,7 @@ public class PatientController {
         public Patient updatePatient(@RequestBody Patient patient) throws Exception {
             return patientService.updatePatient(patient) ;
     }
+
     @DeleteMapping
         public void deletePatient(@RequestBody Patient patient) throws Exception {
             patientService.deletePatient(patient) ;
